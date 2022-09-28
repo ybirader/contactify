@@ -1,0 +1,21 @@
+<li class="contact-card">
+  <div class="description">
+    <p class="name">{{full_name}}</p>
+    <dl>
+      <dt class="label">Phone Number:</dt>
+      <dd class="field">{{phone_number}}</dd>
+      <dt class="label">Email:</dt>
+      <dd class="field">{{email}}</dd>
+      {{#if tags}}
+        <dd class="label">Tags:</dd>
+        {{#each (split tags)}}
+          <dt class="field">{{this}}</dt>
+        {{/each}}
+      {{/if}}
+    </dl>
+  </div>
+  <div class="buttons">
+    <button class="secondary-btn" data-type="edit" data-id="{{id}}">Edit</button>
+    <button class="secondary-btn" data-type="delete" data-id="{{id}}">Delete</button>
+  </div>
+</li>

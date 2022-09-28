@@ -1,0 +1,30 @@
+[
+  {
+    "full_name": "John",
+    "phone_number": "123",
+    "email": "j@mail.com",
+    "tags": "sales",
+    "id": 1
+  },
+  {
+    "full_name": "James",
+    "phone_number": "123",
+    "email": "jame@mail.com",
+    "tags": "marketing",
+    "id": 2
+  },
+  {
+    "full_name": "James",
+    "phone_number": "123",
+    "email": "james@mail.com",
+    "tags": "abc,123",
+    "id": 3
+  },
+  {
+    "full_name": "gary",
+    "phone_number": "123",
+    "email": "gaz@mail.com",
+    "tags": "sales,marketing",
+    "id": 4
+  }
+]

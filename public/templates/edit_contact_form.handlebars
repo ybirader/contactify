@@ -1,0 +1,21 @@
+<form class="edit-contact-form" action="/api/contacts" method="post">
+  <h2>Contact Form</h2>
+  <fieldset class="fields">
+    <label class="label" for="full_name">Full Name</label>
+    <input class="form-input indented" type="text" name="full_name" id="full_name" value="{{full_name}}">
+
+    <label class="label" for="email">Email address:</label>
+    <input class="form-input indented" type="email" name="email" id="email" value="{{email}}">
+
+    <label class="label" for="phone_number">Telephone number:</label>
+    <input class="form-input indented" type="text" name="phone_number" id="phone_number" value="{{phone_number}}">
+
+    <label for="tags" class="label">Tags</label>
+    <input type="text" class="form-input indented" name="tags" id="tags" value="{{tags}}">
+
+    <div class="buttons">
+    <button class="primary-btn" data-type="submit" data-id="{{id}}">Submit</button>
+    <button type="reset" class="primary-btn" data-type="cancel" data-id="{{id}}">Cancel</button>
+  </div>
+  </fieldset>
+</form>

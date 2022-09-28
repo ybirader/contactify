@@ -1,0 +1,15 @@
+<div class="partial-content">
+  {{#if (isEmpty contacts)}}
+    <div class="content-box"><p>There are no contacts starting with <span class="emphasis">{{query}}</span>
+    {{#if selectedTag}}
+      and that have the <span class="emphasis">{{selectedTag}}</span> tag.
+    {{/if}}
+    </p></div>
+  {{else}}
+    <ul class="contacts">
+      {{#each contacts}}
+        {{>contact-partial}}
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>

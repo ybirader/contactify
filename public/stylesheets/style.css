@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #614789;
+  color: #FFF;
+  padding: 20px;
+}
+header h1 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+form {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.7rem;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.content-box {
+  background-color: #F5F5F5;
+}
+.content-box.horizontal {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content-box.vertical {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary-input {
+  height: 30px;
+  width: 240px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+
+.primary-btn {
+  padding: 15px 20px;
+  border: solid 1px #614789;
+  border-radius: 5px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.secondary-btn {
+  padding: 10px 15px;
+  border: solid 1px #614789;
+  border-radius: 5px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.primary-btn:focus, .primary-btn:hover,
+.secondary-btn:focus, .secondary-btn:hover {
+  color: #FFF;
+  background-color: #614789;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+  gap: 20px;
+}
+
+.contact-card .name {
+  margin-bottom: 10px;
+}
+.contact-card .description {
+  margin-bottom: 10px;
+}
+.contact-card .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form {
+  padding: 20px;
+}
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 10px;
+}
+.fields .buttons {
+  grid-column: 2 / -1;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* UTILITY */
+
+.indented {
+ padding-left: 10px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.field {
+  font-weight: 0.7rem;
+}
+
+.emphasis {
+  font-weight: bold;
+}

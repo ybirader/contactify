@@ -1,0 +1,23 @@
+<div class="content-box horizontal">
+  <button class="primary-btn" data-type="add-contact">Add Contact</button>
+  <input class="primary-input indented" type="text" data-type="search" placeholder="Search">
+  {{#unless (isEmpty contacts)}}
+    <label>Filter by Tag:
+    <select class="tag-filter" name="tags" id="tags">
+      <option value="" selected>Select Tag</option>
+      {{#each (extractUniqueTags contacts)}}
+        <option value="{{this}}">{{this}}</option>
+      {{/each}}
+    </select>
+    </label>
+  {{/unless}}
+</div>
+{{#if (isEmpty contacts)}}
+<div class="content-box vertical"
+  <p>There are no contacts.</p>
+  <button class="primary-btn" data-type="add-contact">Add Contact</button>
+</div>
+{{else}}
+  {{>search-partial}}
+{{/if}}
+
