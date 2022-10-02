@@ -1,0 +1,1 @@
+A contact manager application written using vanilla JavaScript, Node.js, HTML/CSS, SQLite, Express.js, and Handlebars.js.
